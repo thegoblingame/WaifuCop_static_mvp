@@ -1,11 +1,6 @@
-while true; do
-  read -r "?enter=run, q=quit: " ans
-  [[ "$ans" == "q" ]] && break
-  claude --dangerously-skip-permissions --model opus < prompt.md
-done
+I want you to generate code for a website that's relatively simple. As you can see I've already given you some boilerplate code That renders a static page . It's going to be a single page and the website is going to pull some information from a database and render that information With a data visualization (bar graph). For now I'll give you some mock data and we can connect it to the database later  That's it that's the entire single page. It's just going to be that one thing. The data is just going to be productivity data so the database is storing productivity data from users. It's going to be how much time the user has been working on different subjects and on what days they did so. Again this data will be rendered as a bar graph, color-coded bar graph with an x-axis for dates and y-axis for time (hours spent).
 
-while true; do
-  read -r "?enter=run, q=quit: " ans
-  [[ "$ans" == "q" ]] && break
-  claude --dangerously-skip-permissions --model sonnet < prompt.md
-done
+The data visualization will have an option that toggles the time frame. Those options will be for now let's say 7 days, 30 days, and 120 days. The default will be 30 days. The maximum value on the y-axis will be 10 hours. I'd like you to download whatever libraries you think are appropriate in order to render this data visualization. In this prompt below I'm providing the structure of the data that the front end will receive. 
+
+
+
