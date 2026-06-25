@@ -1,3 +1,74 @@
 {
-  "days": []
+  "days": [
+    {
+      "date": "2026-03-29",
+      "productive_minutes": {
+        "Coding": 0,
+        "Studying": 0,
+        "Writing": 0,
+        "Other": 0
+      },
+      "productive_total": 0,
+      "unproductive_minutes": 0,
+      "afk_minutes": 15,
+      "intervals": 1,
+      "failed": 0
+    },
+    {
+      "date": "2026-03-30",
+      "productive_minutes": {
+        "Coding": 0,
+        "Studying": 0,
+        "Writing": 0,
+        "Other": 0
+      },
+      "productive_total": 0,
+      "unproductive_minutes": 0,
+      "afk_minutes": 45,
+      "intervals": 3,
+      "failed": 0
+    },
+    {
+      "date": "2026-04-12",
+      "productive_minutes": {
+        "Coding": 48,
+        "Studying": 0,
+        "Writing": 9,
+        "Other": 2
+      },
+      "productive_total": 59,
+      "unproductive_minutes": 28,
+      "afk_minutes": 217,
+      "intervals": 51,
+      "failed": 0
+    },
+    {
+      "date": "2026-06-18",
+      "productive_minutes": {
+        "Coding": 63,
+        "Studying": 2,
+        "Writing": 35,
+        "Other": 2
+      },
+      "productive_total": 102,
+      "unproductive_minutes": 6,
+      "afk_minutes": 25,
+      "intervals": 30,
+      "failed": 1
+    },
+    {
+      "date": "2026-06-23",
+      "productive_minutes": {
+        "Coding": 72,
+        "Studying": 3,
+        "Writing": 35,
+        "Other": 3
+      },
+      "productive_total": 113,
+      "unproductive_minutes": 2,
+      "afk_minutes": 6,
+      "intervals": 31,
+      "failed": 6
+    }
+  ]
 }
