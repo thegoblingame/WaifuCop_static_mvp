@@ -1,5 +1,5 @@
-// Shape of the productivity data the frontend receives from the backend/database.
-// The page consumes an array of these — one object per calendar day.
+// Shape of the productivity data the frontend renders.
+// app/data.json is the source of truth — these types mirror its structure.
 
 export type Subject = 'Coding' | 'Studying' | 'Writing' | 'Other';
 
@@ -15,17 +15,18 @@ export const SUBJECT_COLORS: Record<Subject, string> = {
 
 export type SubjectMinutes = Record<Subject, number>;
 
-export interface Interval {
-  failed: boolean;
-  reasoning: string;
-  productive_minutes: SubjectMinutes;
-  unproductive_minutes: number;
-  afk_minutes: number;
-  timestamp: string;
-}
-
+// One calendar day, matching each entry in app/data.json's `days` array.
 export interface DayProductivity {
   date: string; // YYYY-MM-DD
   productive_minutes: SubjectMinutes;
-  intervals: Interval[];
+  productive_total: number;
+  unproductive_minutes: number;
+  afk_minutes: number;
+  intervals: number; // count of intervals recorded that day
+  failed: number; // count of intervals that failed
+}
+
+// Top-level shape of app/data.json (and the uvicorn endpoint's response).
+export interface ProductivityData {
+  days: DayProductivity[];
 }
