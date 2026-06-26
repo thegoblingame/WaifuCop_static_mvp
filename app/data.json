@@ -69,6 +69,20 @@
       "afk_minutes": 6,
       "intervals": 31,
       "failed": 6
+    },
+    {
+      "date": "2026-06-25",
+      "productive_minutes": {
+        "Coding": 44,
+        "Studying": 0,
+        "Writing": 77,
+        "Other": 5
+      },
+      "productive_total": 126,
+      "unproductive_minutes": 4,
+      "afk_minutes": 19,
+      "intervals": 35,
+      "failed": 3
     }
   ]
 }
